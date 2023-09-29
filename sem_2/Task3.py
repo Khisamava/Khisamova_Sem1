@@ -29,6 +29,18 @@ for i in range(num_steps):
     if st[i] == 'Z':
         if st[-i-1] == '5':
             flag2 = True;
+    if st[i] == '3':
+        if st[-i-1] == 'E':
+            flag2 = True;
+    if st[i] == 'L':
+        if st[-i-1] == 'J':
+            flag2 = True;
+    if st[i] == '2':
+        if st[-i-1] == 'S':
+            flag2 = True;
+    if st[i] == '5':
+        if st[-i-1] == 'Z':
+            flag2 = True;
 
 
 
