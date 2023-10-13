@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 x = [0,1,2,3,4]
-y = [0,2,4,6,8]
+y = [0,4,8,16,28]
 
 # Инициализировать рисунок/Figure
 # dpi -- количество пикселей на дюйм в рисунке
