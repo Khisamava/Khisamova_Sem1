@@ -8,6 +8,7 @@ def Nod(a, b):
 a = int(input())
 b = int(input())
 d = Nod(a, b)
+print(d)
 x = 1
 y = (d - a*x)/b
 
