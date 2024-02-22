@@ -55,13 +55,15 @@ class SegmentTree:
     def __getitem__(self, idx):
         return self.data[idx]
 
-    def update(self, index, new_item):
+    def update(self, left_border, right_border, value):
         if int(self.neutral_elements) == 0:
-            self.data.insert(index, new_item)
+            for i in range(left_border, right_border+1):
+                self.data[i] += value
             self.build_tree()
         else:
             del self.data[-(int(self.neutral_elements)):]
-            self.data.insert(index, new_item)
+            for i in range(left_border, right_border + 1):
+                self.data[i] += value
             self.build_tree()
 
 
